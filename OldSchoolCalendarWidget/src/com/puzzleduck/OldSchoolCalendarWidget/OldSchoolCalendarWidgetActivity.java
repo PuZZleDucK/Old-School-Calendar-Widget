@@ -17,6 +17,44 @@ public class OldSchoolCalendarWidgetActivity extends Activity  {
         setContentView(R.layout.main);
     }
 	
+    
+    //old stuff from manifest:
+//    <activity 
+//    android:name=".OldSchoolCalendarWidgetActivity"
+//    android:label="Cal Activity" >
+//    <intent-filter>
+//        <action android:name="android.intent.action.MAIN" />
+//        <category android:name="android.intent.category.INFO" />
+//    </intent-filter>
+//</activity>
+//    
+
+
+//    <service android:name="OldSchoolCalendarWidgetProvider"
+//        android:permission="android.permission.BIND_REMOTEVIEWS"
+//        android:exported="false" />
+//    
+//    <activity
+//    	android:name="com.puzzleduck.OldSchoolCalendarWidget.AppWidgetConfigureActivity">
+//		<intent-filter>
+//    		<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+//		</intent-filter>
+//	</activity>
+
+    
+    
+    
+//    <reciever android:name=".OldSchoolCalendarWidgetProvider" android:label="Cal Widget">
+//		<intent-filter>
+//		    <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+//		</intent-filter>
+//		<meta-data android:name="android.appwidget.provider" 
+//		           android:resource="@xml/oldcalendarinfo" />
+//    </reciever>
+//    
+//    <service android:name="OldSchoolCalendarWidgetProvider"
+//        android:permission="android.permission.BIND_REMOTEVIEWS"
+//        android:exported="false" />
 	 
 //	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds){
 //        final int N = appWidgetIds.length;

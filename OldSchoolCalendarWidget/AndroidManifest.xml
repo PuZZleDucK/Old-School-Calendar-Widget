@@ -6,27 +6,24 @@
 
     <uses-sdk android:minSdkVersion="14" 
        		  android:targetSdkVersion="11" />
-    
+    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
     <application
-        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         
-	    <reciever android:name=".OldSchoolCalendarWidgetProvider" android:label="Cal Widget">
-			<intent-filter>
-			    <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-			</intent-filter>
-			<meta-data android:name="android.appwidget.provider" 
-			           android:resource="@xml/oldcalendarinfo" />
-	    </reciever>
+	 <receiver
+	       android:icon="@drawable/ic_launcher"
+	       android:label="@string/app_name"
+	       android:name="OldSchoolCalendarWidgetProvider" >
+	       <intent-filter >
+	            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	       </intent-filter>
+	
+	       <meta-data
+	          android:name="android.appwidget.provider"
+	          android:resource="@xml/oldcalendarinfo" />
+	</receiver>
 	    
-        <activity 
-            android:name=".OldSchoolCalendarWidgetActivity"
-            android:label="Cal Activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.INFO" />
-            </intent-filter>
-        </activity>
+	    
         
     </application>
     
