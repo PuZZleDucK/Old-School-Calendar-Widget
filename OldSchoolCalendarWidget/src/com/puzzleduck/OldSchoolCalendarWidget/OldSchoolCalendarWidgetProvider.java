@@ -66,6 +66,9 @@ public class OldSchoolCalendarWidgetProvider extends AppWidgetProvider  {
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.main);
             views.setOnClickPendingIntent(R.id.button1, pendingIntent);
 
+//breaks widget
+		//	views.removeAllViews(R.id.button1);
+			
             // Tell the AppWidgetManager to perform an update on the current app widget
             appWidgetManager.updateAppWidget(appWidgetId, views);
         }

@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RemoteViews;
 import android.util.*;
+import android.widget.*;
 
 public class OldSchoolCalendarWidgetActivity extends Activity  {
     /** Called when the activity is first created. */
@@ -36,6 +37,12 @@ public class OldSchoolCalendarWidgetActivity extends Activity  {
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.main);
             views.setOnClickPendingIntent(R.id.button1, pendingIntent);
 
+			// no effect
+			views.removeAllViews(R.id.button1);
+			//Button newButton = new Button(this);
+			//newButton.setText("new");
+			//views.addView(newButton.g);
+			
             // Tell the AppWidgetManager to perform an update on the current app widget
             appWidgetManager.updateAppWidget(appWidgetId, views);
         }
