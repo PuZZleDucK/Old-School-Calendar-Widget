@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RemoteViews;
 import android.widget.Toast;
+import android.util.*;
 
 public class OldSchoolCalendarWidgetProvider extends AppWidgetProvider  {
 //    /** Called when the activity is first created. */
@@ -50,7 +51,8 @@ public class OldSchoolCalendarWidgetProvider extends AppWidgetProvider  {
     @Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds){
         final int N = appWidgetIds.length;
-
+		Log.d("osCal","provider update");
+		
         // Perform this loop procedure for each App Widget that belongs to this provider
         for (int i=0; i<N; i++) {
             int appWidgetId = appWidgetIds[i];
