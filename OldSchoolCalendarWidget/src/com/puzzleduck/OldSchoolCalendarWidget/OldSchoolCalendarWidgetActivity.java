@@ -29,7 +29,7 @@ public class OldSchoolCalendarWidgetActivity extends Activity  {
             int appWidgetId = appWidgetIds[i];
 
             // Create an Intent to launch ExampleActivity
-            Intent intent = new Intent(context, AppWidgetConfigureActivity.class);
+            Intent intent = new Intent(context, OldSchoolCalendarWidgetConfigure.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
             // Get the layout for the App Widget and attach an on-click listener
@@ -38,7 +38,7 @@ public class OldSchoolCalendarWidgetActivity extends Activity  {
             views.setOnClickPendingIntent(R.id.button1, pendingIntent);
 
 			// no effect
-			views.removeAllViews(R.id.button1);
+		//	views.removeAllViews(R.id.button1);
 			//Button newButton = new Button(this);
 			//newButton.setText("new");
 			//views.addView(newButton.g);
