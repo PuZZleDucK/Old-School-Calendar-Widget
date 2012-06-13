@@ -18,7 +18,7 @@ public class OldSchoolCalendarWidgetProvider extends AppWidgetProvider
 	public static void updateAppWidget(Context context, AppWidgetManager appWidgetManager, int mAppWidgetId, String p3)
 	{
 		// TODO: Implement this method
-		Log.d("cal","update");
+		Log.d("oldCal","update");
 	}
 	
 	
@@ -62,7 +62,7 @@ public class OldSchoolCalendarWidgetProvider extends AppWidgetProvider
     @Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds){
         final int N = appWidgetIds.length;
-		Log.d("osCal","provider update");
+		Log.d("oldCal","provider update");
 	
         // Perform this loop procedure for each App Widget that belongs to this provider
         for (int i=0; i<N; i++) {

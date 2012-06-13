@@ -21,14 +21,14 @@ class OldSchoolCalendarWidgetConfigure  extends Activity {
 		Log.d("oldCal","test");
 		
 		setContentView(R.layout.config);
-		
+		/*
 		Intent intent = getIntent ();
 		Bundle extras = intent.getExtras();
 		if ( extras != null ) {
 			mAppWidgetId = extras.getInt(
 				AppWidgetManager.EXTRA_APPWIDGET_ID ,
 				AppWidgetManager.INVALID_APPWIDGET_ID);
-		}
+		}*/
 		
 	//	do cfg here:
 		
@@ -48,7 +48,7 @@ class OldSchoolCalendarWidgetConfigure  extends Activity {
 //		setResult( RESULT_OK , resultValue );
 //		finish();
 		
-		
+		/*
 		View.OnClickListener mOnClickListener = new View .OnClickListener () {
 			public void onClick ( View v ) {
 				final Context context = OldSchoolCalendarWidgetConfigure.this;
@@ -67,7 +67,7 @@ class OldSchoolCalendarWidgetConfigure  extends Activity {
 				finish ();
 			}
 		};
-		
+		*/
 		
        
     }

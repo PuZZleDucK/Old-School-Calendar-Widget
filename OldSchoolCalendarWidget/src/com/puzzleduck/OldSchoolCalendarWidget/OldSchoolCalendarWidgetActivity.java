@@ -22,7 +22,7 @@ public class OldSchoolCalendarWidgetActivity extends Activity  {
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds){
         final int N = appWidgetIds.length;
 
-		Log.d("osCal","activity update");
+		Log.d("oldCal","activity update");
 		
         // Perform this loop procedure for each App Widget that belongs to this provider
         for (int i=0; i<N; i++) {
