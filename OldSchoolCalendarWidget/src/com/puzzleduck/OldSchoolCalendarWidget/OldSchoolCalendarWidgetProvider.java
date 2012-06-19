@@ -68,25 +68,29 @@ public class OldSchoolCalendarWidgetProvider extends AppWidgetProvider
         for (int i=0; i<N; i++) {
             int appWidgetId = appWidgetIds[i];
 
+			Log.d("oldCal","provider update 1");
 			AppWidgetProviderInfo info = appWidgetManager.getAppWidgetInfo(appWidgetId);
 			info.updatePeriodMillis = 1000;
 			
-			
+
+			Log.d("oldCal","provider update 2");
             // Create an Intent to launch ExampleActivity
             Intent intent = new Intent(context, OldSchoolCalendarWidgetConfigure.class);
+
+			Log.d("oldCal","provider update3");
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
             // Get the layout for the App Widget and attach an on-click listener
             // to the button
-            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.main);
-            views.setOnClickPendingIntent(R.id.button1, pendingIntent);
+         //   RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.main);
+         //   views.setOnClickPendingIntent(R.id.button1, pendingIntent);
 
 //breaks widget
 		//	views.removeAllViews(R.id.button1);
 			
 			
             // Tell the AppWidgetManager to perform an update on the current app widget
-            appWidgetManager.updateAppWidget(appWidgetId, views);
+          //  appWidgetManager.updateAppWidget(appWidgetId, views);
         }
 
 

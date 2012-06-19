@@ -23,7 +23,7 @@
 	          android:resource="@xml/oldcalendarinfo" />
 	</receiver>
         
-		<activity android:name = "OldSchoolCalendarWidgetConfigure" >
+		<activity android:name = "com.puzzleduck.OldSchoolCalendarWidget.OldSchoolCalendarWidgetConfigure" >
 			<intent-filter>
 				<action android:name ="android.appwidget.action.APPWIDGET_CONFIGURE" />
 			</intent-filter>
