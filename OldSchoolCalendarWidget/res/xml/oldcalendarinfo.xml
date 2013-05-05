@@ -4,11 +4,11 @@
     android:initialLayout="@layout/main"
     android:minHeight="160dp"
     android:minWidth="146dp"
-	android:resizeMode="horizontal|vertical"
 	android:configure="com.puzzleduck.OldSchoolCalendarWidget.OldSchoolCalendarWidgetConfigure"
     android:updatePeriodMillis="1800" >
 </appwidget-provider>
 <!--
+	android:resizeMode="horizontal|vertical"
 	android:previewImage="@drawable/preview"
 	android:resizeMode="horizontal|vertical"
 	
